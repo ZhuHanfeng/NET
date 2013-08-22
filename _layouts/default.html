@@ -10,14 +10,12 @@
         {% else %}
         <meta name="keywords" content="{{site.keywords | join: ','}}" />
         {% endif %}
-    
-    
+
         <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">
         <link href="{{site.baseurl}}/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
         <link rel="stylesheet" href="{{site.baseurl}}/media/css/style.css">
         <link rel="stylesheet" href="{{site.baseurl}}/media/css/highlight.css">
         <script type="text/javascript" src="{{site.baseurl}}/media/js/jquery-1.7.1.min.js"></script>
-   
     </head>
   
     <body>
@@ -27,13 +25,13 @@
                     <h1>{{ page.title }}</h1>
                 </header>
                 <nav>
-                    <span><a title="home page" class="" href="{{site.baseurl}}/">Home</a></span>
-                    <span><a title="about" class="" href="{{site.baseurl}}/about/">About</a></span>
-                    <span><a title="guestbook" class="" href="{{site.baseurl}}/guestbook/">Guestbook</a></span>
-                    <span><a title="categories" class="" href="{{site.baseurl}}/categories/">Categories</a></span>
-                    <span><a title="tags" class="" href="{{site.baseurl}}/tags/">Tags</a></span>
-                    <span><a title="links" class="" href="{{site.baseurl}}/links/">Links</a></span>
-                    <span><a title="subscribe by RSS" class="" href="{{site.baseurl}}/feed.xml">Subscribe</a></span>
+                    <span><a title="home page" href="{{site.baseurl}}/">Home</a></span>
+                    <span><a title="about" href="{{site.baseurl}}/about/">About</a></span>
+                    <span><a title="guestbook" href="{{site.baseurl}}/guestbook/">Guestbook</a></span>
+                    <span><a title="categories" href="{{site.baseurl}}/categories/">Categories</a></span>
+                    <span><a title="tags" href="{{site.baseurl}}/tags/">Tags</a></span>
+                    <span><a title="links" href="{{site.baseurl}}/links/">Links</a></span>
+                    <span><a title="subscribe by RSS" href="{{site.baseurl}}/feed.xml">Subscribe</a></span>
                 </nav>
                 <article class="content">
                     {{ content }}
@@ -42,9 +40,9 @@
 
             <footer>
                 <p><small>
-                    <a href="https://github.com/{{site.github}}/NET/new/gh-pages/_posts" target="_blank" title="New Post">Co</a>pyright 2012 - {{site.time | date:"%Y"}} by 
+                    <a href="https://github.com/{{site.github}}/WEB/new/gh-pages/_posts" target="_blank" title="New Post">Co</a>pyright 2012 - {{site.time | date:"%Y"}} by 
                     <a href="{{site.baseurl}}/about/">{{site.author}}</a> | 
-                    <a href="https://github.com/{{site.github}}/NET/edit/gh-pages/{{page.path}}" target="_blank" title="Edit Page">Po</a>wered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://pages.github.com">GitHub</a> 
+                    <a href="https://github.com/{{site.github}}/WEB/edit/gh-pages/{{page.path}}" target="_blank" title="Edit Page">Po</a>wered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://pages.github.com">GitHub</a> 
                 </small></p>
             </footer>
         </div>
@@ -62,7 +60,7 @@
         <!-- bshare Button END -->
  
         <!-- Baidu Analysis BEGIN -->
-        <script type="text/javascript">
+		<script type="text/javascript">
             var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
             document.write(unescape("%3Cscript src='" + _bdhmProtocol + 
                 "hm.baidu.com/h.js%3F14b3310bff6b098afe65ea6514989b4b' type='text/javascript'%3E%3C/script%3E"));
