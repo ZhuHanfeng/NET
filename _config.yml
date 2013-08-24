@@ -2,7 +2,8 @@ name: mlnotes
 description: Machine Learning Notes
 markdown: rdiscount
 permalink: /:year/:month/:day/:title.html
-url: http://mlnotes.com
+url: http://zhuhf.github.io
+baseurl: /NET
 author: hanfeng
 email: zhuhf@outlook.com
 pygments: true
