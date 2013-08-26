@@ -5,7 +5,7 @@ permalink: /:year/:month/:day/:title.html
 url: http://zhuhf.github.io
 baseurl: /WEB
 author: zhuhf
-email: zhuhf@outlook.com
+email: me@mlnotes.com
 pygments: true
 safe: true
 paginate: 16
