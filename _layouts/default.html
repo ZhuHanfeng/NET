@@ -49,22 +49,24 @@
 
     </div>
  	<!-- Mathjax begin -->
-	<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script>
-	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	<!-- Mathjax end -->
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <!-- Mathjax end -->
 
-	<!-- bshare BEGIN -->
-	<a class="bshareDiv" href="http://www.bshare.cn/share">分享</a>
-	<script type="text/javascript" charset="utf-8" 
-		src="http://static.bshare.cn/b/buttonLite.js#uuid={{site.bshare}}&style=3&fs=4&textcolor=#FFF&bgcolor=#F58384&bp=qqmb,bsharesync,sinaminiblog,qzone,sohuminiblog,renren,xinhuamb,tianya,shouji,ifengmb,neteasemb,qqxiaoyou,kaixin001,peoplemb,weixin,douban,qqim&text=分享"></script>
-	<!-- bshare Button END -->
+        <!-- bshare BEGIN -->
+        {% if site.bshare %}
+        <a class="bshareDiv" href="http://www.bshare.cn/share">分享</a>
+        <script type="text/javascript" charset="utf-8" 
+                src="http://static.bshare.cn/b/buttonLite.js#uuid={{site.bshare}}&style=3&fs=4&textcolor=#FFF&bgcolor=#F58384&bp=qqmb,bsharesync,sinaminiblog,qzone,sohuminiblog,renren,xinhuamb,tianya,shouji,ifengmb,neteasemb,qqxiaoyou,kaixin001,peoplemb,weixin,douban,qqim&text=分享"></script>
+        {% endif %}
+        <!-- bshare Button END -->
  
- 	<!-- Baidu Analysis BEGIN -->
-	<script type="text/javascript">
-		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-		document.write(unescape("%3Cscript src='" + _bdhmProtocol + 
-		"hm.baidu.com/h.js%3F14b3310bff6b098afe65ea6514989b4b' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-  	<!-- Baidu Analysis END -->
-  </body>
+         <!-- Baidu Analysis BEGIN -->
+        <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + 
+                "hm.baidu.com/h.js%3F14b3310bff6b098afe65ea6514989b4b' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!-- Baidu Analysis END -->
+    </body>
 </html>
