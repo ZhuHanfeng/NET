@@ -3,7 +3,7 @@ description: Machine Learning Notes
 markdown: rdiscount
 permalink: /:year/:month/:day/:title.html
 url: http://zhuhf.github.io
-baseurl: /WEB
+baseurl: 
 author: zhuhf
 email: me@mlnotes.com
 pygments: true
