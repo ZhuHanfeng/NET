@@ -14,7 +14,7 @@ title: OpenTok
   var token     = "T1==cGFydG5lcl9pZD00MDI1NTQwMiZzZGtfdmVyc2lvbj10YnJ1YnktdGJyYi12MC45MS4yMDExLTAyLTE3JnNpZz1mZDhlOGNjZWM4NzY5NDIxMmIzZGFjODA1ZmI0YWFhNzQ1NWQxMGU5OnJvbGU9cHVibGlzaGVyJnNlc3Npb25faWQ9Ml9NWDQwTURJMU5UUXdNbjR4TWpjdU1DNHdMakYtVTNWdUlGTmxjQ0F3T0NBd05Ub3pNVG8wTkNCUVJGUWdNakF4TTM0d0xqYzJPRGt5TVRSLSZjcmVhdGVfdGltZT0xMzc4NjQzNTIxJm5vbmNlPTAuNzg4NzE1OTg1OTU3Mzg4MiZleHBpcmVfdGltZT0xMzc4NzI5OTE5JmNvbm5lY3Rpb25fZGF0YT0=";
  
   function sessionConnectedHandler (event) {
-     session.publish( publisher, "publish" );
+     session.publish( publisher );
      subscribeToStreams(event.streams);
   }
   function subscribeToStreams(streams) {
@@ -30,7 +30,7 @@ title: OpenTok
     subscribeToStreams(event.streams);
   }
  
-  var publisher = TB.initPublisher(apiKey);
+  var publisher = TB.initPublisher(apiKey, "publish");
   var session   = TB.initSession(sessionId);
  
   session.addEventListener("sessionConnected", 
